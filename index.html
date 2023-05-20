@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly</title>
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Nav Container-->
+    <section id="hero" class="mb-24">
+        <nav class="relative container mx-auto p-6 py-8">
+            <!--Flex Container for all Items-->
+            <div class=" flex items-center justify-between">
+                <!--Flex Container for Logo/menu-->
+                <div class="flex items-center space-x-20">
+                    <!--LOGO-->
+                    <img src="../images/logo.svg" class="" alt="">
+                    <!--Left Menu-->
+                    <div class="hidden space-x-8 font-bold text-lg lg:flex">
+                        <a href="" class="text-gray-400 hover:text-black">Features</a>
+                        <a href="" class="text-gray-400 hover:text-black">Pricing</a>
+                        <a href="" class="text-gray-400 hover:text-black">Resources</a>
+                    </div>
+                </div>
+                <!--Right Menu-->
+                <div class="hidden space-x-8 font-bold text-lg items-center lg:flex ">
+                    <a href="" class="text-gray-400 hover:text-black">Login</a>
+                    <!--Button-->
+                    <button
+                        class="bg-[#14d3d3] py-2.5 px-7 rounded-full text-white transition duration-300 hover:bg-[#14d3d3ad]">Sign
+                        Up</button>
+                </div>
+
+                <!--todo hamburger button-->
+                <div class="lg:hidden">
+                    <button id="menu-btn" type="button"
+                        class=" z-40 flex flex-col    hamburger m-5 lg:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+
+            </div>
+            <!--todo mobile menu-->
+            <div id="menu"
+                class="hidden absolute top-20 bottom-0  h-96 flex-col mx-auto items-center justify-center max-w-3xl rounded-3xl  py-1 px-10  space-y-5 text-xl font-light text-white tracking-wider uppercase bg-[#462565]">
+                <a href="#" class="hover:text-pink-500">Features</a>
+                <a href="#" class="hover:text-pink-500">Pricing</a>
+                <a href="#" class="hover:text-pink-500">Resources</a>
+                <a href="#" class="hover:text-pink-500">Login</a>
+                <button
+                    class="bg-[#14d3d3] py-2.5 w-60 px-7 rounded-full text-white transition duration-300 hover:bg-[#14d3d3ad]">Sign
+                    Up</button>
+            </div>
+
+
+
+        </nav>
+
+        <!--Hero section-->
+        <div class="flex flex-col p-5 mx-auto justify-center items-center space-y-10 lg:flex-row lg:space-y-0">
+
+            <!--Image-->
+            <img src="../images/illustration-working.svg" class="mb-10 mx-auto md:max-w-md lg:hidden" alt="">
+
+            <!--Content-->
+            <div class="flex flex-col p-5 mx-auto max-w-xl space-y-10 lg:justify-start">
+                <h1 class="font-bold text-5xl text-center mx-auto lg:text-left lg:text-6xl">More than just shorter links
+                </h1>
+                <p class="font-sans text-gray-400 text-center text-2xl lg:text-left lg:text-3xl">Build your brand's
+                    recognition and get
+                    detailed
+                    insights
+                    on how
+                    your links
+                    are performing.</p>
+
+                <button
+                    class="bg-[#14d3d3] p-4 w-60 font-bold text-center text-2xl mx-auto rounded-full text-white transition duration-300 hover:bg-[#14d3d3ad] lg:mx-0">Get
+                    Started</button>
+            </div>
+            <!--Desktop Image-->
+            <img src="../images/illustration-working.svg" class="hidden max-w-xl mx-auto pb-12 lg:flex lg:items-start"
+                alt="">
+        </div>
+    </section>
+
+    <!--Shorten Links Section-->
+    <section id="shorten" class="bg-gray-100  p-4 mt-10 lg:mt-44">
+        <!--Shorten Container-->
+        <div class=" mx-auto p-6 space-y-2">
+
+            <!--Form-->
+            <div class="rounded-xl bg-gradient-to-tr from-[#24162e] to-[#7f56a3]">
+
+                <form id="link-form"
+                    class="rounded-xl p-5 m-5 -mt-32 mx-auto bg-[url('../images/bg-shorten-desktop.svg')] relative flex flex-col  lg:flex-row lg:justify-between lg:items-center ">
+
+                    <!--Input-->
+                    <div class="w-full">
+                        <input type="text" id="link" placeholder="Shorten a link here..."
+                            class="placeholder:text-red-500 focus:outline-none p-5 mb-3 w-full  rounded-lg lg:mt-7">
+
+                        <!--Error msg-->
+                        <div id="err-msg" class="   text-red-500 ml-2 mt-1 text-sm italic"></div>
+                    </div>
+
+
+
+                    <!--Button-->
+                    <button
+                        class="bg-[#14d3d3] px-3 py-5 w-full font-bold mt-5 text-center text-2xl mx-auto rounded-lg text-white transition duration-300 hover:bg-[#7cdbdb] lg:mx-5 lg:mb-5 lg:mt-8 lg:w-52">Shorten
+                        it!</button>
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!--Link 1-->
+        <div
+            class="p-3 pr-10 m-5 justify-center  flex flex-col rounded-xl bg-white lg:flex-row lg:justify-between lg:pr-5 lg:items-center lg:rounded-none">
+
+            <a href="https://github.com/zareenf01" class="font-semibold m-3">https://github.com/zareenf01</a>
+
+            <hr class="m-3">
+
+            <div
+                class="flex flex-col  justify-end flex-1 space-x-4 space-y-2 lg::items-center lg:flex-row text-cyan-300">
+                <div class="font-semibold text-cyan-300 m-3">
+                    http://relink/k4IKyk
+                </div>
+
+                <button
+                    class="bg-[#14d3d3] p-3 w-full font-bold mt-4 text-center text-xl mx-auto rounded-lg text-white transition duration-300 hover:bg-[#7cdbdb] lg:mx-5 lg:mb-5 lg:w-52 ">Copy</button>
+            </div>
+        </div>
+
+
+        <!--Link 2-->
+        <div
+            class="p-3 pr-10 m-5 justify-center  flex flex-col rounded-xl bg-white lg:flex-row lg:pr-5 lg:justify-between lg:items-center lg:rounded-none">
+
+            <a href="https://twitter.com/ZareenFatima01"
+                class="font-semibold m-3">https://twitter.com/ZareenFatima01</a>
+
+            <hr class="m-3">
+
+            <div
+                class="flex flex-col  justify-end flex-1 space-x-4 space-y-2 lg::items-center lg:flex-row text-cyan-300">
+                <div class="font-semibold text-cyan-300 m-3">
+                    http://relink/k4IKyk
+                </div>
+
+                <button
+                    class="bg-[#14d3d3] p-3 w-full font-bold text-center text-xl mx-auto rounded-lg text-white transition duration-300 hover:bg-[#7cdbdb] lg:mx-5 lg:mb-5 lg:w-52 ">Copy</button>
+            </div>
+        </div>
+
+        <!--Link 3-->
+        <div
+            class="p-3 pr-10 m-5 justify-center  flex flex-col rounded-xl bg-white lg:flex-row lg:pr-5 lg:justify-between lg:items-center lg:rounded-none">
+
+            <a href="https://www.linkedin.com/in/zareen-fatima-476110244/"
+                class="font-semibold m-3">https://www.linkedin.com/in/zareen-fatima</a>
+
+            <hr class="m-3">
+
+            <div
+                class="flex flex-col  justify-end flex-1 space-x-4 space-y-2 lg::items-center lg:flex-row text-cyan-300">
+                <div class="font-semibold text-cyan-300 m-3">
+                    http://relink/k4IKyk
+                </div>
+
+                <button
+                    class="bg-[#14d3d3] p-3 w-full font-bold text-center text-xl mx-auto rounded-lg text-white transition duration-300 hover:bg-[#7cdbdb] lg:mx-5 lg:mb-5 lg:w-52 ">Copy</button>
+            </div>
+        </div>
+
+        <!--Advanced Stats-->
+
+        <div class="flex flex-col space-y-5 justify-center items-center">
+
+            <h2 class="font-bold text-4xl text-center font-sans mx-auto p-5 mt-8">
+                Advanced Statistics
+            </h2>
+
+            <p class="text-gray-400 font-semibold text-xl  text-center max-w-3xl lg:text-2xl">
+                Track how your links are performing across the web with our advanced statistics dashboard
+            </p>
+        </div>
+
+
+        <!--Features Section-->
+        <div
+            class="flex flex-col mt-20 space-y-28 relative justify-center items-center lg:flex-row lg:space-x-10 lg:mt-10">
+
+            <!--Horizontal line-->
+            <div class="hidden absolute top-40 left-16 h-2 bg-cyan-300 w-10/12 md:block">
+            </div>
+
+            <!--Vertical line-->
+            <div class="absolute w-2 h-1/2 ml-1 bg-cyan-300 md:hidden"></div>
+
+            <!--Box 1-->
+
+            <div class="bg-white p-5 m-5 z-40 h-72 lg:-translate-y-20">
+
+                <div class="p-4 m-3 -mt-16 w-16 mx-auto bg-violet-950 rounded-full">
+                    <img src="../images/icon-brand-recognition.svg" alt="">
+                </div>
+
+                <h3 class="font-bold text-3xl font-sans text-center mx-auto p-5 ">
+                    Brand Recognition
+                </h3>
+
+                <p class="text-gray-400 font-normal text-lg  text-center self-center">
+                    Boost your brand recognition with each click. Generic links don't mean a thing. Branded links
+                    help
+                    instil confidence in your content.
+                </p>
+            </div>
+
+
+
+            <!-- Box 2 -->
+            <div class="bg-white p-5 m-5 z-40 h-72 lg:mb-10 lg:-translate-y-14">
+
+                <div class="p-4 m-3 -mt-16 w-16 mx-auto bg-violet-950 rounded-full">
+                    <img src="../images/icon-detailed-records.svg" alt="">
+                </div>
+
+                <h3 class="font-bold text-3xl font-sans text-center mx-auto p-5 ">
+                    Detailed Records
+                </h3>
+
+                <p class="text-gray-400 font-normal text-lg  text-center">
+                    Gain insights into who is clicking your links. Knowing when and where people engage with your
+                    content helps inform better decisions.
+                </p>
+            </div>
+
+
+            <!--Box 3-->
+            <div class="bg-white p-5 m-5 h-72 z-40 lg:-translate-y-5 ">
+
+                <div class="p-4 m-3  -mt-16 w-16 mx-auto bg-violet-950 rounded-full">
+                    <img src="../images/icon-fully-customizable.svg" alt="">
+                </div>
+
+                <h3 class="font-bold text-3xl font-sans text-center mx-auto p-5 ">
+                    Fully Customized
+                </h3>
+
+                <p class="text-gray-400 font-normal text-lg  text-center">
+                    improve brand awareness and content discoverability through customized links, supercharging
+                    audience
+                    engagement.
+                </p>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+    <!--Last section-->
+    <section id="boost" class=" lg:mt-32 bg-[#252241]">
+
+        <div
+            class="flex flex-col space-y-10 justify-center p-10   items center bg-[url('../images/bg-boost-desktop.svg')] bg-blend-normal">
+            <h1 class="font-bold text-white text-center text-3xl">Boost your links today</h1>
+
+            <button
+                class="bg-[#48d3d3] p-4 w-60 font-bold text-center text-2xl mx-auto rounded-full text-white transition duration-300 hover:bg-[#71ebeb] ">Get
+                Started</button>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div
+            class="flex justify-center overflow-x-hidden items-center flex-col text-center text-gray-300  bg-[#1b1b1b] lg:flex-row lg:justify-start lg:space-x-32 ">
+
+            <!--Logo-->
+            <img src="../images/logo-white.svg" alt="" class="h-12 mt-10 md:mr-16
+          ">
+            <!--Features-->
+            <div class="flex flex-col mt-10 lg:mt-3 space-y-4
+          ">
+                <h4 class="font-bold text-lg text-white">Features</h4>
+
+                <a href="#" class="font-medium">Link Shortining</a>
+
+                <a href="#" class="font-medium ">Branded Links</a>
+
+                <a href="#" class="font-medium ">Analytics</a>
+            </div>
+
+            <!--Resources-->
+            <div class="flex flex-col mt-10 lg:-mt-3 space-y-4 
+      ">
+                <h4 class="font-bold text-lg text-white">Resources</h4>
+
+                <a href="#" class="font-medium">Blog</a>
+
+                <a href="#" class="font-medium ">Developers</a>
+
+                <a href="#" class="font-medium ">Support</a>
+            </div>
+
+            <!--Company-->
+            <div class="flex flex-col mt-12 space-y-4 lg:mt-8
+      ">
+                <h4 class="font-bold text-lg text-white">Company</h4>
+
+                <a href="#" class="font-medium">About</a>
+
+                <a href="#" class="font-medium ">Our Teams</a>
+
+                <a href="#" class="font-medium ">Carrers</a>
+
+                <a href="#" class="font-medium ">Contact</a>
+            </div>
+
+            <!--Socials-->
+            <div class="flex m-10 lg:justify-end  lg:items-end  ">
+                <img src="../images/icon-facebook.svg " alt="" class="m-5 hover:cursor-pointer">
+                <img src="../images/icon-twitter.svg" alt="" class="m-5 hover:cursor-pointer">
+                <img src="../images/icon-pinterest.svg" alt="" class="m-5 hover:cursor-pointer">
+                <img src="../images/icon-instagram.svg" alt="" class="m-5 hover:cursor-pointer">
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./public/script.js" defer></script>
+</body>
+
+</html>
