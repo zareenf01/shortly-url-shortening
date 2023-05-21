@@ -43,3 +43,13 @@ btn.addEventListener("click", function () {
   btn.classList.toggle("open");
   menu.classList.toggle("show");
 });
+
+
+let copyBtn = document.querySelectorAll(".copy-btn");
+
+copyBtn.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    btn.style.backgroundColor = "#252241";
+    btn.textContent = "Copied!";
+  });
+});
